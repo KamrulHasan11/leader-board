@@ -85,3 +85,94 @@ article .thumbnail img{
     color: #9F9F9F;
     font-size: 16px;
 }
+
+/* Latest Course Section Style */
+.latest-margin-btm{
+    margin-bottom: 27px;
+}
+.latest-title{
+    margin-bottom: 15px;
+    color: #562EFF;
+}
+.latest-course{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    box-shadow: 5px 3px 10px rgb(245 245 245);
+    padding: 10px;
+    border-radius: 20px;
+}
+.course-detail img{
+    width: 224px;
+    height: 104px;
+}
+.course-detail h3{
+    font-size: 20.03px;
+    font-weight: 500;
+}
+.course-detail small{
+    color: #ED6B4F;
+    font-weight: 400;
+    font-size: 14.69px;
+}
+.course-rating-info{
+    display: flex;
+    align-items: center;
+}
+.course-rating-info small{
+    margin-left: 10px;
+    font-size: 14.69px;
+}
+.field-ratting{
+    color: #FFC014;
+}
+.empty-ratting{
+    color: #AEAEAE;
+}
+.fa-star{
+    font-size: 14px;
+}
+.course-duration{
+    margin-left: 26px;
+    font-size: 14.69px;
+    background-color: #FFE4E8;
+    padding: 5px 10px;
+    color: #FF4A60;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Media Query  */
+/* Mobile Device */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .main-article, .latest-course{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, article{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* iPad Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .main-article{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .latest-course{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+}
